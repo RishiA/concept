@@ -118,14 +118,14 @@ p.map {
   color: #fff; }
 
 .txtpink {
-  color: #ff46af; }
+  color: #C81F64; }
 
 .txtbrightpink {
   color: #ffe4f3; }
 
 .txtblue {
-  color: #3399ff; }
-
+   color: #C81F64; 
+}
 .txtdarkblue {
   color: #4a97bd; }
 
@@ -140,6 +140,14 @@ p.map {
 
 .bgpurple {
   background: #5c5c84; }
+
+.txtgolden{
+   color: #8c7466;  
+   font-weight: 700    
+}
+.txtgold{
+    color: #D5B961;
+}
 
 /*
 ------------------------------------------------
@@ -367,6 +375,9 @@ img#haende {
 ------------------------------------------------
 */
 /* General */
+html{
+    background: #F3F3F1;
+}
 section {
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
@@ -380,22 +391,57 @@ section#home {
   background: url("../img/cover.jpg") center no-repeat;
   background-size: cover;
   z-index: 5; }
-
-
+.toran{
+    background: url("../img/marigold.png") center repeat-x;
+    z-index: 10;
+    height: 100px;
+    width: 100%;
+}
+#intro{
+    font-size: 24px;
+    text-shadow:1px 0px 0px #1F1E1E;
+    color: #8C7466;
+    text-align: justify; 
+    line-height: 1.8em;
+}
+#intro > span{
+    color: #ff46af;
+}
+.overlay{
+        background: rgba(0,0,0,0.2);
+    float: left;
+    width: 40%;
+    height: auto;
+    top: 10%;
+    left: 10%;
+    border-radius: 15px;
+    position: absolute;
+}
+.save-the-date{
+    font-family:Roboto,Arial;
+    font-size: 36px;
+    color : antiquewhite;
+}
+.date{
+     font-family: 'Bad Script', cursive;
+    font-size: 78px;
+    color: aliceblue
+}
+#mugdha-rishi{
+        background: #f3f3f1;  
+}
   .welcome-text{
     font-size: 4.5em;
     color: #fff;
-  
-    font-family: cursive, Arial, sans-serif;
+    font-family: 'Bad Script', cursive;
     font-style: italic;
     text-align: center;
-    opacity: 0.6;
     width  : 100%;
-    margin: 0 auto;    
+    margin: 10px auto; 
 }
-.yellow{color: #FDD17A;text-shadow: 1px 1px 2px #000;}
-.red{color: #AD0C0C;   text-shadow: 1px 1px 1px #4d4d4d;}
-.heart-img{ background: url('../img/heart.png') no-repeat bottom center;
+.yellow{    color: #D5B961;}
+.red{    color: #C81F64;}
+.heart-img{ background: url('../img/double-heart.png') no-repeat bottom center;
                         background-size: 100px;
                         width: 100px;
                     height: 100px;
@@ -468,24 +514,40 @@ section#home {
 section#das-brautpaar {
   position: relative;
   padding-top: 100px;
-  z-index: 6; }
+  z-index: 6; 
+  background: url("../img/zigzag.png") top repeat-x;
+}
 
 /* Die Trauzeugen */
 section#die-trauzeugen {
   position: relative;
-  z-index: 6; }
+  z-index: 6; 
+  margin: 40px auto;
+}
 
+.welcome-party-heading{
+    height: 180px;
+}
 /* Zusammen */
 section#zusammensein {
   position: relative;
   z-index: 5;
   font: 700 3em/1em 'Amatic SC', sans-serif;
-  background: url("../img/zigzag.png") top repeat-x #ded1
-  ; }
+  background: #FFF;    
+}
+#warum-nicht{
+  color: #8C7466;   
+}
 
 #daycounter1, #daycounter2 {
   font: 700 1.8em/1em 'Amatic SC', sans-serif;
-  color: #fff; }
+  color: #D5B961; 
+  line-height: 1.3em;
+}
+.counter-text{
+    color: #7D7C7A;
+    font-weight: 400;
+}
 
 #hourcounter1, #hourcounter2, #minutecounter1, #minutecounter2 {
   font: 700 1em/1em 'Amatic SC', sans-serif;
@@ -521,7 +583,9 @@ section#uebernachten {
 /* Trauung */
 section#die-trauung {
   position: relative;
-  min-height: 600px; }
+  min-height: 600px; 
+  background: #FFF;    
+}
 
 .row.trauung {
   margin-top: 40%; }
@@ -1075,7 +1139,7 @@ label.captcode {
   .trauungcontent {
     background: rgba(255, 255, 255, 0.6); }
   #hennitxt {
-    margin-top: 200px; }
+    margin-top: 400px; }
   .container.smart-forms {
     padding-left: 0;
     padding-right: 0; }

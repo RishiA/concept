@@ -204,6 +204,18 @@ $(document).ready(function($) {
 });
 $(document).ready(function($) {
 	// build tween
+	var tween = TweenMax.fromTo("p#intro", 0.5, 
+				{marginTop: "30%", width: "100%"},
+				{marginLeft: 0}
+				);
+
+	// build scene
+	var scene = new ScrollScene({triggerElement: "section#zusammensein", triggerHook: 0.5})
+					.setTween(tween)
+					.addTo(controller);
+});
+$(document).ready(function($) {
+	// build tween
 	var tween = TweenMax.fromTo("div#counter1", 0.5, 
 				{marginLeft: "-200%", width: "100%"},
 				{marginLeft: 0}
