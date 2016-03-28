@@ -11,9 +11,24 @@
 		<title>Mugdha &amp; Rishi</title>
 
 		<!-- Favicon--> 
-
-		<link rel="shortcut icon" href="https://raw.githubusercontent.com/mugsk/wedding-invite/master/img/favicon.ico" />
-
+        <link rel="apple-touch-icon" sizes="57x57" href="/concept_files/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/concept_files/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/concept_files/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/concept_files/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/concept_files/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/concept_files/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/concept_files/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/concept_files/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/concept_files/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="concept_files/favicon//android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/concept_files/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/concept_files/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/concept_files/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/concept_files/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/concept_files/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    
 		
 		<!-- Fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet" type="text/css">
@@ -30,6 +45,10 @@
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script type="text/javascript" src="concept_files/js/jpreloader.js"></script>
 		<script type="text/javascript" src="concept_files/js/TweenMax.js"></script>
+    
+        <!-- Slider -->
+    <link rel="stylesheet" href="/concept_files/unslider-master/dist/css/unslider.css">
+    <link rel="stylesheet" href="/concept_files/unslider-master/dist/css/unslider-dots.css">
 	<script type="text/javascript">    
 		$(document).ready(function() {       
 			$('body').jpreLoader();    
@@ -53,6 +72,25 @@
 				</div>
 			</div>
 		    </section>	
+        
+        <section id="home">
+        <div class="my-slider">
+            <ul>
+                 <li><img   src="concept_files/img/slideshow/cover-1.jpg"></li>
+                <li><img  src="concept_files/img/slideshow/cover-2.jpg"></li>
+                <li><img  src="concept_files/img/slideshow/cover-3.jpg"></li>
+                <li><img  src="concept_files/img/slideshow/cover-4.jpg"></li>
+                <li><img  src="concept_files/img/slideshow/cover-5.jpg"></li>
+            </ul>
+            <div id="scrolldown">
+				<p>SCROLL</p>
+				<div class="mouse">
+					<span><p>&#8595;</p></span>
+				</div>
+			</div>
+        </div>
+        </section>
+<!--
 		<section id="home">
       
 
@@ -65,6 +103,7 @@
 			
 			
 		</section>
+-->
 
 		<section id="zusammensein">
 			<img id="bubble-fakten" src="concept_files/img/its-time.svg">
@@ -319,13 +358,24 @@ Don't forget to share your photos with us! <span>#MugdhaRishi</span></p>
 		        }); // end validate	
 		    });
 		</script>
+<!--        <script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>-->
+	    <script src="/concept_files/unslider-master/dist/js/unslider-min.js"></script>
+
 		<script>
 			$(document).ready(function(){
+//             $('.my-slider').unslider();
+            $('.my-slider').unslider({
+                autoplay : true,
+                arrows: false,
+                delay:5000,
+                speed:4000
+            });
 			//Click event to scroll to top
 			$('.toTop').click(function(){
 				$('html, body').animate({scrollTop : 0},1800);
 				return false;
 			});
+     
 			});
 		</script>
 		<script>
@@ -337,5 +387,5 @@ Don't forget to share your photos with us! <span>#MugdhaRishi</span></p>
 		  ga('create', '', 'auto');
 		  ga('send', 'pageview');
 		</script>
-	
+
 </body></html>

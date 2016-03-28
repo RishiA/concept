@@ -387,19 +387,24 @@ section {
 /* Home */
 section#home {
   position: relative;
-  height: 100%;
-  background: url("../img/cover.jpg") center no-repeat;
-  background-size: cover;
+    width: 100%;
+    background: #FFF;
+    min-height: 800px;
+/*  background: url("../img/cover.jpg") center no-repeat;*/
+/*  background-size: cover;*/
   z-index: 5; }
+.my-slider li img{
+    width: 100%;
+}
 .toran{
     background: url("../img/marigold.png") center repeat-x;
     z-index: 10;
     height: 100px;
     width: 100%;
 }
+
 #intro{
     font-size: 24px;
-    text-shadow:1px 0px 0px #1F1E1E;
     color: #8C7466;
     text-align: justify; 
     line-height: 1.8em;
@@ -460,7 +465,7 @@ section#home {
 
 #scrolldown p {
   font: 700 0.7em/1em 'Josefin Sans', sans-serif;
-  color: #000;
+  color: #FFF;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
   -webkit-animation-fill-mode: both;
@@ -476,7 +481,7 @@ section#home {
   width: 26px;
   height: 46px;
   border-radius: 13px;
-  border: 2px solid #000;
+  border: 3px solid #fff;
   position: absolute;
   left: 50%;
   margin: 10px 0 0 -13px; }
@@ -515,7 +520,8 @@ section#das-brautpaar {
   position: relative;
   padding-top: 100px;
   z-index: 6; 
-  background: url("../img/zigzag.png") top repeat-x;
+  background: url("../img/zigzag.png") top repeat-x, #70223D;
+    
 }
 
 /* Die Trauzeugen */
@@ -985,7 +991,16 @@ label.captcode {
   .smart-forms .bdr {
     border-right: 0; }
   .smart-forms .align-right {
-    text-align: left; } }
+    text-align: left; } 
+    section#home{
+            min-height: 300px;
+    }
+    .heart-img{
+        display: block;
+        width: 100%;
+        margin: 0px auto;
+    }
+}
 
 /*
 ------------------------------------------------
