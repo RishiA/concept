@@ -67,7 +67,7 @@ h1 {
   font-weight: 400; }
 
 a {
-  color: #ff46af;
+  color: #C81F64;
   text-decoration: none; }
 
 .tel {
@@ -148,6 +148,9 @@ p.map {
 .txtgold{
     color: #D5B961;
 }
+.txtgray{
+    color : #fafafa;
+}
 
 /*
 ------------------------------------------------
@@ -155,7 +158,7 @@ p.map {
 ------------------------------------------------
 */
 .bgbrightpink {
-  background: #ffe4f3; }
+  background: #C8AF64; }
 
 .col-sm-6 {
   margin: 80px 0; }
@@ -388,19 +391,35 @@ section {
 section#home {
   position: relative;
     width: 100%;
-    background: #FFF;
+    background: #f3f3f1;
+/*    background: #1C0C27;*/
     min-height: 800px;
+           
 /*  background: url("../img/cover.jpg") center no-repeat;*/
 /*  background-size: cover;*/
   z-index: 5; }
+
 .my-slider li img{
     width: 100%;
-}
+    height: auto;
+    z-index: 200;
+    max-width: 1000px;
+/*    max-height: 600px; */
+    border-right : 40px solid #C81F64;
+    border-left: 40px solid #D5B961;
+    box-shadow: 20px 20px 50px #FAFAFA;
+}       
 .toran{
+        background: url("../img/marigold.png") center repeat-x;
+    z-index: 1000; 
+    height: 60px;
+    width: 100%;
+/*
     background: url("../img/marigold.png") center repeat-x;
     z-index: 10;
     height: 100px;
     width: 100%;
+*/
 }
 
 #intro{
@@ -436,20 +455,23 @@ section#home {
         background: #f3f3f1;  
 }
   .welcome-text{
-    font-size: 4.5em;
+    font-size: 3em;
     color: #fff;
     font-family: 'Bad Script', cursive;
     font-style: italic;
-    text-align: center;
-    width  : 100%;
-    margin: 10px auto; 
+     text-align: center;
+      letter-spacing : 2px;
+    width: 100%;
+    text-shadow: 0px 1px 6px #D6D6D6;
+    font-weight: bold;
+    margin: 5px auto 5px auto;
 }
 .yellow{    color: #D5B961;}
 .red{    color: #C81F64;}
 .heart-img{ background: url('../img/double-heart.png') no-repeat bottom center;
-                        background-size: 100px;
-                        width: 100px;
-                    height: 100px;
+                        background-size: 50px;
+                        width: 50px;
+                    height: 50px;
                     display: inline-block;
 }
 
@@ -520,7 +542,7 @@ section#das-brautpaar {
   position: relative;
   padding-top: 100px;
   z-index: 6; 
-  background: url("../img/zigzag.png") top repeat-x, #70223D;
+  background: url("../img/zigzag.png") top repeat-x, #333;
     
 }
 
@@ -603,7 +625,7 @@ section#die-trauung {
 
 /* Anmeldung */
 section#anmeldung {
-  background: #C6E1FE;
+  background: #F3F3F1;
   position: relative;
   z-index: 10; }
 
@@ -631,10 +653,11 @@ section#googlemap {
 
 /* Footer */
 section#footer {
-  background: url("../img/zigzag.png") top repeat-x #ff46af;
+  background: url("../img/zigzag.png") top repeat-x #8C7466;
   height: 50px;
-  font-size: 1.5em;
-  padding-top: 13px; }
+    color : #FFF;
+  font-size: 0.8em;
+  padding-top: 12px; }
 
 .toTop {
   cursor: pointer; }
@@ -678,11 +701,11 @@ section#footer {
 /* @control border-size :: color etc for these elements 
 ----------------------------------------------------------- */
 .smart-forms .select, .smart-forms .gui-input, .smart-forms .gui-textarea, .smart-forms .select > select, .smart-forms .select-multiple select {
-  background: transparent;
+  background: rgba(140,116,102,0.22);
   position: relative;
   vertical-align: top;
-  border: 2px solid #a7cef8;
-  color: #4a97bd;
+  border: 2px solid #8C7466;
+  color: #333;
   outline: none;
   height: 50px;
   width: 100%; }
@@ -703,7 +726,7 @@ section#footer {
   text-indent: 0.01px;
   text-overflow: '';
   z-index: 10;
-  background: #e1f2ff; }
+  background: rgba(140,116,102,0.22); }
 
 .smart-forms .select > select::-ms-expand {
   display: none; }
@@ -747,13 +770,13 @@ section#footer {
 /* @form element :hover state 
 -------------------------------------------- */
 .smart-forms .gui-input:hover, .smart-forms .gui-textarea:hover, .smart-forms .select > select:hover, .smart-forms .select-multiple select:hover, .smart-forms .gui-input:hover ~ .input-hint, .smart-forms .file .gui-file:hover + .gui-input, .smart-forms .gui-textarea:hover ~ .input-hint {
-  border-color: #ff46af; }
+  border-color: #C81F64; }
 
 /* @form element :focus state 
 -------------------------------------------------------- */
 .smart-forms .gui-input:focus, .smart-forms .gui-textarea:focus, .smart-forms .select > select:focus, .smart-forms .select-multiple select:focus {
-  border-color: #ff46af;
-  color: #ff46af; }
+  border-color: #C81F64;
+  color: #C81F64; }
 
 .smart-forms .gui-textarea:focus {
   height: 120px; }
@@ -763,10 +786,10 @@ section#footer {
   z-index: 20\9; }
 
 .smart-forms .gui-input:focus ~ .field-icon i, .smart-forms .gui-textarea:focus ~ .field-icon i {
-  color: #ff46af; }
+  color: #C81F64; }
 
 .smart-forms .select > select:focus + .arrow {
-  color: #ff46af; }
+  color: #C81F64; }
 
 /* @buttons 
 ----------------------------------------------------- */
@@ -785,10 +808,10 @@ section#footer {
 /* @primary button theme
 -------------------------------------------- */
 .smart-forms .btn-primary {
-  background-color: #3399ff; }
+  background-color: #333; }
 
 .smart-forms .btn-primary:hover, .smart-forms .btn-primary:focus {
-  background-color: #ff46af;
+  background-color: #C81F64;
   -webkit-transform: rotate(360deg) scale(1.2);
   -moz-transform: rotate(360deg) scale(1.2);
   transform: rotate(360deg) scale(1.2); }
@@ -931,7 +954,7 @@ label.captcode {
   margin-top: 15px !important;
   z-index: 20;
   cursor: pointer;
-  color: #4a97bd !important; }
+  color: #333 !important; }
 
 /* @captcha refresh button themes
 -------------------------------------------------- */
