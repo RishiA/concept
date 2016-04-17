@@ -424,6 +424,10 @@ section#home {
 
 #intro{
     font-size: 24px;
+<<<<<<< Updated upstream
+=======
+    text-shadow:0px 0px 0px #1F1E1E;
+>>>>>>> Stashed changes
     color: #8C7466;
     text-align: justify; 
     line-height: 1.8em;
@@ -487,7 +491,11 @@ section#home {
 
 #scrolldown p {
   font: 700 0.7em/1em 'Josefin Sans', sans-serif;
+<<<<<<< Updated upstream
   color: #FFF;
+=======
+  color: #fff;
+>>>>>>> Stashed changes
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
   -webkit-animation-fill-mode: both;
@@ -503,7 +511,11 @@ section#home {
   width: 26px;
   height: 46px;
   border-radius: 13px;
+<<<<<<< Updated upstream
   border: 3px solid #fff;
+=======
+  border: 2px solid #fff;
+>>>>>>> Stashed changes
   position: absolute;
   left: 50%;
   margin: 10px 0 0 -13px; }
@@ -862,7 +874,7 @@ section#footer {
   width: 100%;
   color: #ff46af; }
 
-select#sendersubject.error {
+select#senderguests.error {
   margin-bottom: 10px; }
 
 /* @progress bar strips + animation IE10+ 

@@ -1,14 +1,14 @@
 <?php
  
-if(isset($_POST['email'])) {
+if(isset($_POST['submit'])) {
  
      
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
  
-    $email_to = "mugdha.mukund@gmail.com";
+    $email_to = "hello@mugdharishi.wedding";
  
-    $email_subject = "RSVP from wedding invite";
+    $email_subject = "RSVP for Mugdha & Rishi's wedding";
  
      
  
@@ -38,7 +38,9 @@ if(isset($_POST['email'])) {
  
         !isset($_POST['senderemail']) ||
  
-        !isset($_POST['sendersubject'])) {
+        !isset($_POST['senderguests']) ||
+
+        !isset($_POST['sendermessage'])) {
  
         died('Sorry, but there appears to be a problem with the form you submitted.');       
  
@@ -50,7 +52,7 @@ if(isset($_POST['email'])) {
  
     $email = $_POST['senderemail']; // required
  
-    $guest = $_POST['sendersubject']; // required    
+    $guest = $_POST['senderguests']; // required    
     
     $message = $_POST['sendermessage']; // required
  
@@ -104,6 +106,8 @@ if(isset($_POST['email'])) {
     $email_message .= "Name: ".clean_string($name)."\n";
  
     $email_message .= "Email: ".clean_string($email)."\n";
+
+    $email_message .= "No. of Guests: ".clean_string($guest)."\n";
  
     $email_message .= "Message: ".clean_string($message)."\n";
  
@@ -127,9 +131,18 @@ $headers = 'From: '.$email."\r\n".
  
 <!-- include your own success html here -->
  
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <title>Thanks</title>
+  <meta http-equiv="refresh" content="10; url=http://mugdharishi.wedding/" />
+ </head>
+ <body>
+ <h2> Thanks for RSVP-ing! We are excited to see you. </h2>
+ </body>
+ </html>
  
- 
-Thanks for RSVP-ing! We are excited to have you there.
+
  
  
  

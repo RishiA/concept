@@ -10,6 +10,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title>Mugdha &amp; Rishi</title>
 
+		<meta property="og:title" content="Mugdha &amp; Rishi: July 24, 2016" />
+	    <meta property="og:site_name" content="Mugdha &amp; Rishi" />
+	    <meta property="og:url" content="http://mugdharishi.wedding/" />
+	    <meta property="og:description" content="Mugdha &amp; Rishi welcome you to their wedding website" />
+	    <meta property="og:image" content="http://mugdharishi.wedding/concept_files/img/couple.png" />
+
 		<!-- Favicon--> 
         <link rel="apple-touch-icon" sizes="57x57" href="/concept_files/favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/concept_files/favicon/apple-icon-60x60.png">
@@ -184,6 +190,8 @@ Don't forget to share your photos with us! <span>#MugdhaRishi</span></p>
  
 <section id="die-trauung">
 			<img id="haende" src="concept_files/img/hands2.png">
+		<section id="die-trauung">
+			<img id="haende" src="concept_files/img/hands4.png">
 			<div class="container">
 				<div class="row trauung">
 					<div class="col-sm-6 trauungcontent txtbronze">
@@ -287,32 +295,32 @@ Don't forget to share your photos with us! <span>#MugdhaRishi</span></p>
 			<img id="bubble-auf-die-party" src="concept_files/img/auf-die-party.svg">
 			<div class="container smart-forms">
 				<div class="col-sm-6 anmeldung">
-					<form novalidate="novalidate" method="post" action="php/phpmailform.php" id="smart-form">
-	                <label class="field">
-	                    <input name="sendername" id="sendername" class="gui-input" placeholder="What's in a Name *" type="text">
+					<form method="post" name="rsvpform" action="concept_files/php/rsvpform.php">
+	                <label for='name' class="field">
+	                    <input type="text" name="name" id="sendername" class="gui-input" placeholder="Name *" >
 	                </label>
-                    <label class="field">
-                        <input name="senderemail" id="senderemail" class="gui-input" placeholder="EMail" type="email">
+                    <label for='email' class="field">
+                        <input type="text" name="email" id="senderemail" class="gui-input" placeholder="Email *">
                     </label>
-			        <label class="field select">
-			            <select id="sendersubject" name="sendersubject">
-			                <option selected="selected" value="">▾ No. of guests *</option>
+			        <label for='guest' class="field select">
+			            <select name="guest" id="senderguests">
+			                <option value=" ">▾ No. of guests *</option>
 			                <option value="1">1</option>
 			                <option value="2">2</option>
 			                <option value="3">3</option>
 			                <option value="4">4</option>
 			            </select>
 			        </label>
-                    <label class="Message">
-                      <textarea id="sendermessage" cols="4" class="gui-input" style="resize:none;height: 120px;" placeholder="Optional Message"></textarea>  
+                    <label for='message' class="Message">
+                      <textarea name="message" id="sendermessage" cols="4" class="gui-input" style="resize:none;height: 120px;" placeholder="Optional Message"></textarea>  
                     </label>    
 			        <div class="form-footer">
-			        	<button type="submit" class="button btn-primary">Submit</button>
+			        	<input type="submit" class="button btn-primary" value="Submit">
 					</div>
 					<div class="result"></div>
 					</form>
 					<p class="highlight nolarge txtdarkblue">
-					In case you need more details, email <a href="mailto:party@mugdharishi.wedding">party@mugdharishi.wedding</a> or reach out to Mugs at: <a href="tel:14842604575">484-260-4575</a>
+					In case you need more details, reach out to us at <a href="mailto:hello@mugdharishi.wedding">hello@mugdharishi.wedding</a> 
 				</p><br><br>
 					
 				</div>
@@ -347,7 +355,14 @@ Don't forget to share your photos with us! <span>#MugdhaRishi</span></p>
 		<script type="text/javascript" src="concept_files/js/jquery.form.min.js"></script>
 		<script type="text/javascript" src="concept_files/js/jquery.validate.js"></script>
 		<script type="text/javascript" src="concept_files/js/additional-methods.js"></script>
-		<script type="text/javascript" src="concept_files/js/smart-form.js"></script>
+		<script type="text/javascript" src="concept_files/js/gen_validatorv31.js"></script>
+		<script language="JavaScript">
+		var frmvalidator  = new Validator("rsvpform");
+		frmvalidator.addValidation("name","req","Please provide your name"); 
+		frmvalidator.addValidation("email","req","Please provide your email"); 
+		frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+		</script>
+		<!--<script type="text/javascript" src="concept_files/js/smart-form.js"></script> -->
 		<script type="text/javascript">
 		    $(function() {
 		       $("#smart-form").validate({
