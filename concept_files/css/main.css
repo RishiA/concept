@@ -393,7 +393,7 @@ section#home {
     width: 100%;
     background: #f3f3f1;
 /*    background: #1C0C27;*/
-    min-height: 800px;
+    min-height: 700px;
            
 /*  background: url("../img/cover.jpg") center no-repeat;*/
 /*  background-size: cover;*/
@@ -407,7 +407,7 @@ section#home {
 /*    max-height: 600px; */
     border-right : 40px solid #C81F64;
     border-left: 40px solid #D5B961;
-    box-shadow: 20px 20px 50px #FAFAFA;
+    box-shadow: 20px 20px 20px #FAFAFA;
 }       
 .toran{
         background: url("../img/marigold.png") center repeat-x;
@@ -424,10 +424,6 @@ section#home {
 
 #intro{
     font-size: 24px;
-<<<<<<< Updated upstream
-=======
-    text-shadow:0px 0px 0px #1F1E1E;
->>>>>>> Stashed changes
     color: #8C7466;
     text-align: justify; 
     line-height: 1.8em;
@@ -453,7 +449,7 @@ section#home {
 .date{
      font-family: 'Bad Script', cursive;
     font-size: 78px;
-    color: aliceblue
+    color: aliceblue;
 }
 #mugdha-rishi{
         background: #f3f3f1;  
@@ -491,11 +487,7 @@ section#home {
 
 #scrolldown p {
   font: 700 0.7em/1em 'Josefin Sans', sans-serif;
-<<<<<<< Updated upstream
-  color: #FFF;
-=======
-  color: #fff;
->>>>>>> Stashed changes
+  color: #000;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
   -webkit-animation-fill-mode: both;
@@ -511,11 +503,7 @@ section#home {
   width: 26px;
   height: 46px;
   border-radius: 13px;
-<<<<<<< Updated upstream
-  border: 3px solid #fff;
-=======
-  border: 2px solid #fff;
->>>>>>> Stashed changes
+  border: 3px solid #000;
   position: absolute;
   left: 50%;
   margin: 10px 0 0 -13px; }
@@ -874,7 +862,7 @@ section#footer {
   width: 100%;
   color: #ff46af; }
 
-select#senderguests.error {
+select#sendersubject.error {
   margin-bottom: 10px; }
 
 /* @progress bar strips + animation IE10+ 
@@ -1080,10 +1068,10 @@ label.captcode {
     margin-left: -42%;
     height: auto; 
     z-index: -2;}
-  img#home{
+  /*img#home{
     width: 85%;
     margin-left: -42%;
-    height: auto;} }
+    height: auto;} */}
 
 @media (max-width: 640px) {
   img#logohome {
@@ -1129,10 +1117,10 @@ label.captcode {
     width: 150%;
     margin-left: -75%;
     height: auto; }
-  img#home {
+  /*img#home {
    width: 150%;
     margin-left: -75%;
-    height: auto; }
+    height: auto; }*/
   .row.trauung {
     margin-top: 80%; } }
 
@@ -1198,7 +1186,7 @@ label.captcode {
   .smart-forms label, .smart-forms input, .smart-forms button, .smart-forms select, .smart-forms textarea {
     font: 600 1em/1.2em 'Josefin Sans', sans-serif; }
   .geschenkecontent {
-    background: #ffe4f3;
+    background: #C8AF64;
     padding-top: 150px; }
   #scrolldown {
     width: 70px;

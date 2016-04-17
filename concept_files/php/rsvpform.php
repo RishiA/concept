@@ -32,13 +32,13 @@ if( empty($errors))
   
   mail($to,$email_subject,$email_body,$headers);
   //redirect to the 'thank you' page
-  header('Location: http://mugdharishi.wedding/thank-you.html');
+  header('Location: thank-you.html');
 } 
 ?>
 <!DOCTYPE HTML> 
 <html>
 <head>
-  <title>RSVP form errors</title>
+  <title>Contact form errors</title>
 </head>
 
 <body>

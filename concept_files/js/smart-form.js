@@ -48,15 +48,15 @@
 					
 						messages:{
 								sendername: {
-										required: 'Dont forget your name',
-										minlength: 'Fill it up'
+										required: 'Bitte gib Deinen Namen an!',
+										minlength: 'Dieser Name ist etwas zu kurz …'
 								},				
 								senderemail: {
-										required: 'Oh... email address needed',
-										email: 'dont forget your email address'
+										required: 'Bitte gib Deine Mail-Adresse an',
+										email: 'Das ist keine gültige E-Mail-Adresse'
 								},
 								sendersubject: {
-										required: 'RSVP to Mugdha & Rishi Wedding'
+										required: 'Wie viele Personen kommen mit?',
 										minlength: 'Subject must be at least 4 characters'
 								},														
 								sendermessage: {
@@ -64,7 +64,7 @@
 										minlength: 'Message must be at least 10 characters'
 								},															
 								securitycode:{
-										required: 'Beep beetp. Security code'
+										required: 'Bitte gib den Code ein.'
 								}
 						},
 
